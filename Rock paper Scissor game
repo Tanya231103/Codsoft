@@ -1,0 +1,14 @@
+#program for rock paper scissor game
+
+import random
+choices = ['rock','paper','scissors']
+comp = random.choice(choices)
+print("Welcome to the Game");
+user = input("Enter rock, paper, scissor: ").lower()
+
+if user == comp:
+    print(f"Player = {user}\nComputer = {comp}\nIts a tie!");
+elif(user == 'rock' and comp == 'scissor') or (user == 'paper' and comp =='rock') or (user == 'scissor' and comp == 'paper'):
+    print(f"Player = {user}\nComputer = {comp}\nYou Win :)");
+else:
+    print(f"Player = {user}\nComputer = {comp}\nYou Loose :(");
